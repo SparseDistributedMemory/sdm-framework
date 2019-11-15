@@ -108,7 +108,7 @@ int as_scanner_opencl_init(struct opencl_scanner_s *this, struct address_space_s
 		}
 		this->global_worksize *= step;
 	}
-	this->kernel_name = "single_scan5_unroll";
+	this->kernel_name = "single_scan4";
 	//if (this->address_space->bs_len == 16) {
 	//	this->kernel_name = "single_scan3_16";
 	//}
@@ -400,7 +400,7 @@ int as_scan_opencl(struct opencl_scanner_s *this, bitstring_t *bs, unsigned int 
 	//gettimeofday(&t1, NULL);
 	//printf("==> Processing results %f ms\n", t1.tv_sec*1000.0 + t1.tv_usec/1000.0 - t0.tv_sec*1000.0 - t0.tv_usec/1000.0);
 	//gettimeofday(&t0, NULL);
-	
+
 	clReleaseKernel(kernel);
 
 	//printf("\n");
