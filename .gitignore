@@ -15,7 +15,7 @@ htmlcov/
 
 libsdm.a
 libsdm.so
-_libsdm.so
+src/_libsdm.so
 
 build/
 dist/

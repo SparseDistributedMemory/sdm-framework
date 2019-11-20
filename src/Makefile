@@ -3,7 +3,7 @@ CC=cc
 CCFLAGS=-O2 -Wall -Wstrict-prototypes -Wsign-compare -Wno-gnu -pedantic -fPIC -std=c99
 
 # Profiling
-#CCFLAGS += -g
+CCFLAGS += -g
 
 # Coverage
 #CCFLAGS += -fprofile-arcs -ftest-coverage
